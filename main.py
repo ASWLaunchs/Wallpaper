@@ -16,7 +16,7 @@ def change():
         print(filepath)
         ctypes.windll.user32.SystemParametersInfoW(
             20, 0, filepath, 0)  # set the desk wallpaper.
-        time.sleep(30 * 60)  # switch once every hour.
+        time.sleep(60)  # switch once every minute.
 
 
 if __name__ == "__main__":
